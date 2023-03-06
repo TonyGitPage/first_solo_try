@@ -90,18 +90,19 @@ nav
 .img_block
     position: relative
 .image_mane
+    margin: auto
     width: 593px
-    height: 720px
+    height: 750px
     display: flex
     z-index: 2
     position: relative
 .image_bg
     position: absolute
-    width: 685px
-    height: 854px
+    width: 693px
+    height: 890px
     z-index: 1
-    top: -38px
-    right: -6px
+    top: -40px
+    right: -29px
 .second_block
     min-height: 1590px
     background: url(../img/Section2_BG.png) center center/cover no-repeat
@@ -122,8 +123,21 @@ nav
         height: 112px
         font-weight: 500
         color: #929A9F
-.column
-    display: flex
-    &_img
-        height: 333px
+.second_block
+    .row
+        display: flex
+    .col-md-4
+        display: flex
+        flex-direction: column
+        margin-top: 80px
         width: 312px
+        .column
+            &_img
+                height: 333px
+                width: 312px
+            &_text
+                font-weight: 500
+                font-size: 20px
+                line-height: 30px
+            &_descr
+            &_link
