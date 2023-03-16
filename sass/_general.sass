@@ -149,13 +149,7 @@ nav
                 font-weight: 500
                 color: #929A9F
             &_link
-                display: flex
-                align-items: center
-                margin-top: 24px
-                font-weight: 500
-                font-size: 16px
-                line-height: 28px
-                color: #FF9900
+                @include orange_link
                 &_arrow
                     margin-left: 16px
 .third_block
@@ -179,7 +173,6 @@ nav
             left: 98px
             top: 98px
             padding: 0px
-            gap: 24px
             z-index: 2
             &_subheader
                 width: 198px
@@ -190,6 +183,7 @@ nav
                 color: #929A9F
                 text-transform: uppercase
             &_header
+                margin-top: 24px
                 width: 494px
                 height: 132px
                 font-size: 32px
@@ -197,6 +191,7 @@ nav
                 line-height: 44px
                 color: #FFFFFF
             &_mane
+                margin-top: 24px
                 width: 422px
                 height: 104px
                 font-size: 16px
@@ -204,11 +199,13 @@ nav
                 line-height: 26px
                 color: #FFFFFF
             .underline
+                margin-top: 56px
                 width: 494px
                 height: 1px
                 background-color: #FFFFFF
                 opacity: 0.2
             &_link
+                margin-top: 23px
                 font-weight: 500
                 font-size: 16px
                 line-height: 28px
@@ -226,3 +223,92 @@ nav
             background: url(tom-barrett-328744-unsplash.jpg)
             filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2))
             z-index: 2
+.fourth_block
+    transform: translateY(-378px)
+    padding-top: 80px
+    .info
+        &_header
+            font-size: 32px
+            line-height: 45px
+            font-weight: 700
+            color: #263640
+        &_block
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            &_descr
+                margin-top: 16px
+                width: 488px
+                height: 84px
+                font-size: 16px
+                line-height: 28px
+                font-weight: 500
+                color: #929A9F
+            &_blog 
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                width: 153px
+                height: 40px
+                background: #FF9900
+                font-weight: 500
+                font-size: 16px
+                line-height: 40px
+                color: #FFFFFF
+                &_arrow
+                    margin-left: 16px
+    .messages
+        margin-top: 80px
+        &_mane
+            height: 20px
+            font-size: 14px
+            font-weight: 500
+            letter-spacing: 0.1em
+            color: #929A9F
+            text-transform: uppercase
+        &_blocks
+            margin-top: 30px
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+            justify-content: space-between
+            .col-md-4
+                width: 361px
+                height: 212px
+                .filling
+                    &_header
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 30px
+                    &_text
+                        margin-top: 20px
+                        font-size: 16px
+                        line-height: 28px
+                        line-height: 28px
+                        font-weight: 500
+                        color: #929A9F
+                    &_link
+                        @include orange_link
+                        &_arrow
+                            margin-left: 16px
+.fifth_block
+    position: relative
+    height: 600px
+    .application
+        position: absolute
+        height: 477px
+        width: 100%
+        left: 0
+        top: 123px
+        background: #F5F8FA
+        &_descr
+            margin-top: 101px
+            margin-left: 351px
+            width: 328px
+        &_image
+            position: absolute
+            width: 728px
+            height: 484px
+            left: 840px
+            top: 0px
