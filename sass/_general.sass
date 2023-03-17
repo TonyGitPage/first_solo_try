@@ -45,6 +45,7 @@ nav
 .first_block
     padding: 96px 0 0 0
     display: flex
+    height: 668px
 .content
     padding: 100px 0 0 0
     display: inline-block
@@ -106,7 +107,7 @@ nav
 .second_block
     min-height: 1590px
     background: url(../img/Section2_BG.png) center center/cover no-repeat
-    transform: translateY(-178px)
+    // transform: translateY(-178px)
 .services
     &_header
         padding-top: 178px
@@ -153,9 +154,15 @@ nav
                 &_arrow
                     margin-left: 16px
 .third_block
-    height: 584px
-    transform: translateY(-741px)
-    padding-top: 187px
+    position: relative
+    // height: 584px
+    // transform: translateY(-741px)
+    // padding-top: 187px
+    .big_block
+        position: absolute
+        height: 584px
+        // left: 352px
+        top: -387px
     .description
         position: relative
         width: 1072px
@@ -224,8 +231,8 @@ nav
             filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2))
             z-index: 2
 .fourth_block
-    transform: translateY(-378px)
-    padding-top: 80px
+    // transform: translateY(-378px)
+    padding-top: 453px
     .info
         &_header
             font-size: 32px
@@ -294,21 +301,139 @@ nav
                             margin-left: 16px
 .fifth_block
     position: relative
-    height: 600px
+    display: flex
+    height: 477px
+    margin-top: 323px
+    background: #F5F8FA
+    // transform: translateY(-381px)
+    .row
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
     .application
-        position: absolute
-        height: 477px
-        width: 100%
-        left: 0
-        top: 123px
-        background: #F5F8FA
-        &_descr
-            margin-top: 101px
-            margin-left: 351px
-            width: 328px
-        &_image
+        margin-top: 100px
+        width: 328px
+        height: 260px
+        &_subheader
+            font-size: 14px
+            font-weight: 500
+            line-height: 20px
+            display: flex
+            align-items: center
+            text-align: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #929A9F
+        &_header
+            margin-top: 16px
+            font-size: 32px
+            font-weight: 700
+            line-height: 44px
+            display: flex
+            align-items: center
+            color: #263640
+        &_text
+            margin-top: 24px
+            font-size: 16px
+            line-height: 28px
+            font-weight: 500
+            color: #929A9F
+        &_button 
+            margin-top: 32px
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding: 0px 16px
+            width: 135px
+            height: 40px
+            background: #FF9900
+            font-size: 16px
+            font-weight: 500
+            line-height: 40px
+            color: #FFFFFF
+            &_arrow
+                margin-left: 16px
+    .col-md-8
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        align-content: flex-end
+        position: relative
+        .fifth_image
             position: absolute
             width: 728px
             height: 484px
-            left: 840px
-            top: 0px
+            left: 140px
+            top: -123px
+            filter: drop-shadow(-10px 10px 50px rgba(0, 0, 0, 0.2))
+            // transform: translateY(-123px)
+footer
+    background: #263640
+    height: 304px
+    .groups
+        display: flex
+        &_logo
+            padding-top: 82px
+        &_1
+            padding-top: 64px
+            margin-left: 671px
+            width: 157px
+            height: 78px
+            &_header
+                font-size: 14px
+                font-weight: 500
+                line-height: 18px
+                letter-spacing: 1.75px
+                text-transform: uppercase
+                color: #FFFFFF
+            &_text
+                margin-top: 8px
+                font-size: 14px
+                line-height: 26px
+                // font-weight: 500
+                color: #FFFFFF
+        &_2
+            padding-top: 64px
+            margin-left: 144px
+            width: 109px
+            height: 78px
+            &_header
+                font-size: 14px
+                font-weight: 500
+                line-height: 18px
+                letter-spacing: 1.75px
+                text-transform: uppercase
+                color: #FFFFFF
+            &_text
+                margin-top: 8px
+                font-size: 14px
+                line-height: 26px
+                // font-weight: 500
+                color: #FFFFFF
+    .line
+        margin-top: 84px
+        width: 1200px
+        height: 0px
+        opacity: 0.2
+        border: 1px solid #FFFFFF
+    .ending
+        margin-top: 40px
+        display: flex
+        &_1
+            font-size: 14px
+            line-height: 18px
+            opacity: 0.3
+            color: #FFFFFF
+        &_dash
+            font-size: 14px
+            height: 18px
+            line-height: 18px
+            opacity: 0.3
+            color: #FFFFFF
+            margin-left: 8px
+        &_2
+            margin-left: 11px
+            font-size: 14px
+            line-height: 18px
+            opacity: 0.3
+            color: #FFFFFF
